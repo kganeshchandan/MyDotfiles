@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =4
+let g:netrw_dirhist_4='/home/ganesh/.config/polybar'
+let g:netrw_dirhist_3='/home/ganesh/.config/bspwm'
+let g:netrw_dirhist_2='/home/ganesh/.config/polybar'
+let g:netrw_dirhist_1='/home/ganesh/.config/rofi/launchers/colorful'
