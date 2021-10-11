@@ -1,25 +1,5 @@
-
-"         ________ ++     ________
-"        /VVVVVVVV\++++  /VVVVVVVV\
-"        \VVVVVVVV/++++++\VVVVVVVV/
-"         |VVVVVV|++++++++/VVVVV/'
-"         |VVVVVV|++++++/VVVVV/'
-"        +|VVVVVV|++++/VVVVV/'+
-"      +++|VVVVVV|++/VVVVV/'+++++
-"    +++++|VVVVVV|/VVVVV/'+++++++++
-"      +++|VVVVVVVVVVV/'+++++++++
-"        +|VVVVVVVVV/'+++++++++
-"         |VVVVVVV/'+++++++++
-"         |VVVVV/'+++++++++
-"         |VVV/'+++++++++
-"         'V/'   ++++++
-"                  ++
-
-
-" --------------- GENERAL ---------------- "
-" reload files changed outside of Vim not currently modified in Vim (needs below)
 set autoread
-
+"syntax on
 " http://stackoverflow.com/questions/2490227/how-does-vims-autoread-work#20418591
 au FocusGained,BufEnter * :silent! !
 
@@ -44,6 +24,9 @@ set number
 " show cursor line
 set cursorline
 
+" show cursor column
+"set cursorcolumn
+
 " highlight matching parens, braces, brackets, etc
 set showmatch
 
@@ -66,7 +49,7 @@ set nowrap
 set startofline
 
 " don't show current mode on commandbar
-" set noshowmode " 
+"set noshowmode "
 
 " faster updatetime
 " set updatetime=750
@@ -97,22 +80,26 @@ nnoremap <M-Right> :tabn<CR>
 nnoremap <M-Left> :tabp<CR>
 
 
-" --------------- COLORS ---------------- "
-" use a modified gruvbox theme
-let g:gruvbox_contrast_dark='hard' 
-let g:gruvbox_italic = 1 
-colorscheme gruvbox_mod 
-syntax enable 
-set termguicolors 
-set background=dark 
+syntax on
+colorscheme onedark
+"colorscheme challenger_deep
 
-" custom highlights
-highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=#161616 guifg=NONE
+"if has('nvim') || has('termguicolors')"
+set termguicolors
+"endif"
+set background=dark
+" highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=#161616 guifg=NONE
 highlight VertSplit cterm=NONE ctermfg=White ctermbg=NONE
 highlight CursorLineNr guifg=white ctermfg=15 cterm=bold
 highlight Whitespace ctermfg=236 guifg=grey19
-highlight Pmenu ctermbg=238 guibg=#444444
-highlight StatusLine ctermfg=233 guifg=#121212
-highlight StatusLineNC ctermfg=233 guifg=#121212
-highlight LineNr ctermfg=242
+" highlight Pmenu ctermbg=238 guibg=#444444
+" highlight StatusLine ctermfg=233 guifg=#121212
+" highlight StatusLineNC ctermfg=233 guifg=#121212
+" highlight LineNr ctermfg=242
 
+
+
+" Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' } "
+
+"let g:lightline = { 'colorscheme': 'challenger_deep'}
+let g:lightline = {'colorscheme': 'onedark', }
