@@ -19,7 +19,12 @@ Plug 'norcalli/nvim-colorizer.lua'
 Plug 'liuchengxu/vim-which-key'
 " Plug 'jremmen/vim-ripgrep'
 Plug 'neovim/nvim-lspconfig'
-
+Plug 'mhinz/vim-startify'
+Plug 'prettier/vim-prettier'
+Plug 'google/vim-maktaba'
+Plug 'google/vim-codefmt'
+Plug 'google/vim-glaive'
+Plug 'rhysd/vim-clang-format'
 
 
 
