@@ -58,7 +58,10 @@ Plug 'vim-syntastic/syntastic'
 " statusline
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'ryanoasis/vim-devicons'
+"Plug 'ryanoasis/vim-devicons'
 
+" tabline
+Plug 'akinsho/bufferline.nvim'
+"Plug 'kdheepak/tabline.nvim'
 
 call plug#end()
